@@ -120,5 +120,4 @@ Feedstock Maintainers
 * [@andrewseidl](https://github.com/andrewseidl/)
 * [@jpharvey](https://github.com/jpharvey/)
 * [@mikehinchey](https://github.com/mikehinchey/)
-* [@randyzwitch](https://github.com/randyzwitch/)
 
