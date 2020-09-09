@@ -1,23 +1,23 @@
 {% set name = "omnisci-pytools" %}
-{% set version = "0.12.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/Quansight/jupyterlab-omnisci/archive/v{{ version }}.tar.gz
-  sha256: 1cf55e2cdf52ef247f095dd0208fbfccb04ba26760705bcf504c186157929211
+  url: https://pypi.io/packages/source/j/jupyterlab-omnisci/jupyterlab-omnisci-{{ version }}.tar.gz
+  sha256: de83d62f4b2738d53d9d5fdab463d99195f3cd1d2a1700713cea307926e858dc
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
   host:
     - python >=3
     - pip
+    - nodejs
   run:
     - python >=3
     - nodejs
@@ -52,3 +52,4 @@ extra:
     - andrewseidl
     - mikehinchey
     - jp-harvey
+    - scopatz
