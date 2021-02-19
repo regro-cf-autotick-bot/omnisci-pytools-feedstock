@@ -5,9 +5,11 @@ Home: https://github.com/Quansight/jupyterlab-omnisci
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/omnisci-pytools-feedstock/blob/master/LICENSE.txt)
 
 Summary: JupyterLab - Omnisci integration
+
+Development: https://github.com/Quansight/jupyterlab-omnisci
 
 'JupyterLab - Omnisci integration'
 
@@ -121,4 +123,5 @@ Feedstock Maintainers
 * [@jp-harvey](https://github.com/jp-harvey/)
 * [@mikehinchey](https://github.com/mikehinchey/)
 * [@scopatz](https://github.com/scopatz/)
+* [@xmnlab](https://github.com/xmnlab/)
 
