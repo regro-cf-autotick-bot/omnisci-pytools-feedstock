@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/j/jupyterlab-omnisci/jupyterlab-omnisci-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/j/jupyterlab-omnisci/jupyterlab-omnisci-{{ version }}.tar.gz
   sha256: de83d62f4b2738d53d9d5fdab463d99195f3cd1d2a1700713cea307926e858dc
 
 build:
-  number: 1
+  number: 2
   noarch: python
 
 requirements:
   host:
-    - python >=3
+    - python {{ python_min }}
     - pip
     - nodejs
   run:
-    - python >=3
+    - python >={{ python_min }}
     - nodejs
     - jupyterlab
     - pymapd
@@ -32,6 +32,8 @@ requirements:
     - pyyaml
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - jupyterlab_omnisci
 
